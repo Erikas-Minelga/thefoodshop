@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9ZXW1b7brQ-W3h-7kHegjhxJMVvjQM94&callback=console.debug&libraries=maps,marker&v=beta" defer></script>
+    <script src="https://kit.fontawesome.com/c21c445645.js" crossorigin="anonymous" defer></script>
+    <script src="src/gallery.js" defer></script>
+    <title>SuperLincs</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex-row top-bar">
+        <h3>SuperLincs</h3>
+      </div>
+      <div class="hero">
+        <div class="flex-col">
+          <div class="brand-title">
+            <img class="logo" src="/img/logo.png" alt="SuperLincs logo">
+              <h1>Welcome to SuperLincs!</h1>
+          </div>
+          <div class="flex-row">
+            <p class="brand-description">Explore a variety of fresh and exotic international food products. From spices to imported goods, we have everything you need to create delicious meals at home.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row black-btn-container">
+        <a href="#products"><button class="btn-black">Discover</button></a>
+      </div>
+    </header>
+    <main>
+      <section id="products">
+        <div class="">
+          <h2>Our Product Range</h2>
+          <p class="margin-top-5px">At SuperLincs, you will find</p>
+        </div>
+
+        <div class="gallery-container flex-row margin-top-5px">
+          <div class="gallery-frame">
+            <div class="gallery-items flex-row">
+
+              <div class="gallery-item">
+                <div class="flex-row image-container">
+                  <img src="/img/international_products.jpg" alt="International products on a shelf">
+                </div>
+                <div class="gallery-text">
+                  <p class="text-bold">International Products</p>
+                  <p class="text-xs margin-top-5px">With our great selection of Polish, Baltic, Balkan, and Asian products, we will make you feel at home, away from home.</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="flex-row image-container">
+                  <img src="/img/meat.jpg" alt="Different types of meat cuts">
+                </div>
+                <div class="gallery-text">
+                  <p class="text-bold">Meat Products</p>
+                  <p class="text-xs margin-top-5px">Hosting a BBQ party? Look no further than SuperLincs, as we have all kinds of meat ready to be marinated and barbecued!</p>
+                </div>
+              </div>
+              
+              <div class="gallery-item">
+                <div class="flex-row image-container">
+                  <img src="/img/baked_goods.jpg" alt="Display of desserts sold at SuperLincs">
+                </div>
+                <div class="gallery-text">
+                  <p class="text-bold">Baked Goods</p>
+                  <p class="text-xs margin-top-5px">We pride ourselves in some of the most amazing cakes, donuts and other baked goods. All made in house to enjoy!</p>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="flex-row image-container">
+                    <img src="/img/salads.jpg" alt="Trays of a selection of salads behind a display">
+                  </div>
+                  <div class="gallery-text">
+                    <p class="text-bold">Deli</p>
+                    <p class="text-xs margin-top-5px">Come check out our Deli section for some delicious salads, meat cuts and other snacks, which will be the star of any party table.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-controls flex-row margin-top-20px">
+          <button data-index="0">
+            <i class="fa-solid fa-circle"></i>
+          </button>
+          <button data-index="1">
+            <i class="fa-regular fa-circle"></i>
+          </button>
+          <button data-index="2">
+            <i class="fa-regular fa-circle"></i>
+          </button>
+          <button data-index="3">
+            <i class="fa-regular fa-circle"></i>
+          </button>
+        </div>
+
+        <p class="margin-top-20px">And much more!</p>
+
+
+      </section>
+
+      <section>
+        <h2>Come find us</h2>
+        <div class="margin-top-5px">
+          <p>116 High Street, Lincoln, LN5 7PR</p>
+          <div class="flex-row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1548.890451855658!2d-0.5452652232402408!3d53.22295682300645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48785b2ea2308689%3A0x10f7ce3509c0eeff!2sSuper%20Lincs!5e0!3m2!1sen!2suk!4v1737742169720!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="margin-top-25px">
+          <h3>Opening Hours</h3>
+          <p class="margin-top-5px">Monday: 9AM - 10PM</p>
+          <p>Tuesday: 9AM - 10PM</p>
+          <p>Wednesday: 9AM - 10PM</p>
+          <p>Thursday: 9AM - 10PM</p>
+          <p>Friday: 9AM - 10PM</p>
+          <p>Saturday: 9AM - 10PM</p>
+          <p>Sunday: 12PM - 6PM</p>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="flex-row space-between">
+        <a href="#"><h3 class="text-bold">SuperLincs</h3></a>
+        <a href="https://www.facebook.com/p/Super-Lincs-100057636213453/?locale=en_GB" target="_blank">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+      </div>
+      <div class="flex-col">
+        <div class="flex-col">
+          <p>116 High Street</p>
+          <p>Lincoln</p>
+          <p>LN5 7PR</p>
+        </div>
+        <div class="flex-row margin-top-15px">
+          <p>01522 525887</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

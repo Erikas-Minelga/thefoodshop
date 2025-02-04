@@ -1,0 +1,268 @@
+:root{
+
+  /* Background colours */
+  --bgcolor-main: #ffffff;
+  --bgcolor-secondary: #B5FEF9;
+  --bgcolor-tertiary: #161616;
+
+  /* Text colours */
+  --tcolor-primary: #030303;
+  --tcolor-secondary: #ffffff;
+
+  /* Fluid font sizes. Generated from: https://fluidtypography.com/#usarusFluidTypographyGetStarted */
+  --f-xsmall: clamp(0.75rem, 0.595vw + 0.464rem, 1rem);
+  --f-small: clamp(1rem, 1.19vw + 0.429rem, 1.5rem);
+  --f-medium: clamp(1.125rem, 2.083vw + 0.125rem, 2rem);
+  --f-large: clamp(1.5rem, 2.381vw + 0.357rem, 2.5rem);
+  --f-xlarge: clamp(2.25rem, 1.488vw + 1.536rem, 2.875rem);
+
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: url('/fonts/Aleo/Aleo-VariableFont_wght.ttf');
+}
+
+/*#region global_styles*/
+
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html{
+  text-align: center;
+  background-color: var(--bgcolor-main);
+  font-family: 'Aleo';
+}
+
+h1{
+  font-size: var(--f-xlarge);
+}
+
+h2{
+  font-size: var(--f-large);
+}
+
+h3{
+  font-size: var(--f-medium);
+}
+
+p{
+  font-size: var(--f-small);
+}
+
+.text-xs{
+  font-size: var(--f-xsmall);
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.hidden{
+  display: none;
+}
+
+.margin-top-5px{
+  margin-top: 5px;
+}
+
+.margin-top-15px{
+  margin-top: 15px;
+}
+
+.margin-top-20px{
+  margin-top: 20px;
+}
+
+.margin-top-25px{
+  margin-top: 25px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/*#endregion*/
+
+/*#region header_styles*/
+
+header{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: var(--bgcolor-secondary);
+}
+
+@media screen and (orientation:landscape) and (max-width: 1205px){
+  header{
+    height: fit-content;
+    padding-bottom: 20vh;
+  }
+}
+
+.top-bar{
+  padding: 20px 0 20px 0;
+}
+
+.hero{
+  margin-top: clamp(30px,5vh,80px);
+}
+
+.brand-title{
+  margin-bottom: clamp(90px,10vh,110px);
+}
+
+.logo{
+  height: clamp(165px,44vw,240px);
+  width: clamp(190px,50vw,275px);
+}
+
+.brand-title > h1{
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-description{
+  width: clamp(290px,77vw,615px);
+}
+
+.black-btn-container{
+  margin-top: clamp(95px,15vh,124px);
+}
+
+.btn-black{
+  font-size: var(--f-medium);
+  background-color: var(--bgcolor-tertiary);
+  color: var(--tcolor-secondary);
+  height: clamp(30px, 8vw, 90px);
+  width: clamp(120px, 32vw, 400px);
+}
+
+/*#endregion*/
+
+/*#region main_general_styles*/
+
+main{
+  padding: 50px;
+}
+
+main > section:nth-child(2){
+  margin-top: 50px;
+}
+
+/*#endregion*/
+
+/*#region products_styles*/
+
+.gallery-container{
+  overflow: hidden;
+}
+
+.gallery-controls > button{
+  border: 0;
+  margin: auto 1vw auto 1vw;
+  font-size: var(--f-xsmall);
+  background-color: var(--bgcolor-primary);
+  height: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery-controls > button{
+    font-size: var(--f-medium);
+  }
+}
+
+.gallery-item{
+  position: relative;
+}
+
+.gallery-frame{
+  overflow: none;
+}
+
+.gallery-item > div > img{
+  height: clamp(300px, 80vw, 600px); 
+  width: clamp(300px, 80vw, 600px);
+}
+
+.gallery-frame{
+  width: clamp(300px, 80vw, 600px);
+  overflow: hidden;
+}
+
+.gallery-items{
+  width: fit-content;
+  justify-content: start;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-text{
+  margin-top: 15px;
+  width: clamp(250px, 73vw, 600px);
+  overflow: scroll;
+}
+
+/*#endregion*/
+
+/*#region findus_styles*/
+
+iframe{
+  width: clamp(300px, 88vw, 700px);
+  height: clamp(250px, 66vw, 650px)
+}
+
+/*#endregion*/
+
+/*#region footer_styles*/
+
+footer{
+  background-color: var(--bgcolor-tertiary);
+  color: var(--tcolor-secondary);
+  height: fit-content;
+  padding-left: clamp(20px,5vw,215px);
+  padding-right: clamp(20px,5vw,215px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--tcolor-secondary);
+}
+
+a > i{
+  font-size: var(--f-medium);
+}
+
+.address{
+  width: 150px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+/*#endregion */
